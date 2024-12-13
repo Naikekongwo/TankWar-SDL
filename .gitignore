@@ -1,0 +1,6 @@
+# 屏蔽 VSCODE 文件夹
+.vscode/
+
+# 屏蔽所有临时图片资源
+resources/TEMP_*.*
+
