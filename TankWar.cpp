@@ -6,6 +6,7 @@ using namespace std;
 
 int WinMain(int argc, char** args)
 {
+    system("chcp 65001");
     SDL_ADAPTER adapter;
     try
     {

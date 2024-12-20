@@ -5,7 +5,7 @@
 #include <SDL2/SDL.h>
 #include "Macro.h"
 
-void DebugCout(std::string tag)
+static void DebugCout(std::string tag)
 {
     std::cout<<tag<<std::endl;
     std::cout<<SDL_GetError()<<std::endl;
