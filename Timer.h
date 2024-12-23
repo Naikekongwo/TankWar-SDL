@@ -6,7 +6,12 @@
 class Timer
 {
     public:
-    Timer() = default;
+    // 构造函数
+    Timer(int frameSeconds)
+    {
+        eTime = 0;
+        this->frameSeconds = frameSeconds;
+    }
 
     int OnUpdate()
     {
@@ -15,13 +20,21 @@ class Timer
         return eTime;
     }
 
+    // 获取时间
     int GetTime()
     {
         return eTime;
     }
+
+    // 设置时间
+    void SetTime(int eTime)
+    {
+        this->eTime = eTime;
+    }
     
     private:
-    int eTime = 0;
+    int eTime,frameSeconds;
+    // eTime为一秒内现在的帧数, frameSeconds为当前帧率上限，则一秒内帧率
 };
 
 

@@ -6,9 +6,10 @@
 #define GP_WIDTH 1280 // 窗口的长度和宽度
 #define GP_HEIGHT 720
 
-#define GP_WINDOW_ICON "resources//icon.bmp" // 应用图标BMP文件的地址
+#define GP_WINDOW_ICON "resources//ICON.bmp" // 应用图标BMP文件的地址
 #define GP_STUDIO_ICON "resources//STUDIO_LOGO.bmp" //工作室BMP文件的地址
 
+#define FULLSCREEN_RECT {0,0,GP_WIDTH,GP_HEIGHT}
 #define FRAME_SECONDS 120 //每秒代表的帧数
 
 #endif //_MACRO_H_

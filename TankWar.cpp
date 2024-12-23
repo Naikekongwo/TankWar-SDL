@@ -1,16 +1,16 @@
 #include <stdexcept>
 #include <iostream>
-#include "Graphics.h"
+
+#include "Core.h"
 
 using namespace std;
 
 int WinMain(int argc, char** args)
 {
-    system("chcp 65001");
-    SDL_ADAPTER adapter;
+    GAME_CORE Game;
     try
     {
-        adapter.run();
+        Game.Run();
     }
     catch(const std::exception& e)
     {
